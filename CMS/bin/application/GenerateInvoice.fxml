@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GenerateInvoiceController">
+   <children>
+      <Button fx:id="genInv" layoutX="226.0" layoutY="145.0" mnemonicParsing="false" onAction="#genInv" text="Confirm order to Generate Invoice" />
+      <Button fx:id="back" layoutX="127.0" layoutY="145.0" mnemonicParsing="false" text="Back" />
+      <TextField fx:id="invoiceField" layoutX="226.0" layoutY="52.0" />
+      <Label layoutX="89.0" layoutY="56.0" text="Enter Order ID :" />
+   </children>
+</Pane>

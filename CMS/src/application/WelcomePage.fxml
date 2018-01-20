@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistrationFormController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <Text fill="#2f5597" layoutX="14.0" layoutY="41.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Courier Management System! " wrappingWidth="559.13671875">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="234.0" fitWidth="318.0" layoutX="67.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fast-delivery-final01.gif" />
+               </image>
+            </ImageView>
+            <Text fill="#e02867" layoutX="14.0" layoutY="76.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Yes! It is faster than you imagine." wrappingWidth="265.13671875">
+               <font>
+                  <Font name="Aharoni Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Hyperlink layoutX="443.0" layoutY="131.0" text="About Us" onAction = "#onAboutUs"/>
+      <Hyperlink layoutX="443.0" layoutY="162.0" text="Contact Us" onAction = "#onContactUs"/>
+      <Hyperlink layoutX="443.0" layoutY="195.0" onAction="#onAdminLogin" text="Login as Admin" />
+      <Hyperlink id="signUp" layoutX="443.0" layoutY="101.0" onAction="#onsignUp" text="Join Us! Sign Up" />
+      <Hyperlink id="signIn" layoutX="442.0" layoutY="70.0" onAction="#onsignIn" text="Already an User? Sign In" />
+   </children>
+</AnchorPane>

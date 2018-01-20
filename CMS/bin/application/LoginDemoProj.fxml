@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane alignment="center" hgap="10" prefHeight="452.0" prefWidth="421.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistrationFormController">
+    <padding><Insets bottom="40" left="40" right="40" top="40" /></padding>
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="100.0">
+        </ColumnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="200.0" prefWidth="200.0">
+        </ColumnConstraints>
+    </columnConstraints>
+   <children>
+   
+       <!-- Add Header Label -->
+       <Label text="Register with us! " GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.rowSpan="1">
+           <font>
+               <Font name="Arial" size="24" />
+           </font>
+           <GridPane.margin>
+               <Insets bottom="20" left="0" right="0" top="20" />
+           </GridPane.margin>
+       </Label>
+   
+   
+   	<!-- Add User ID Label -->
+       <Label text="UserID: " GridPane.columnIndex="0" GridPane.rowIndex="1">
+    </Label>
+       <!-- Add UserID Text Field -->
+       <TextField fx:id="userIdField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   	
+   
+       <!-- Add Name Label -->
+       <Label text="Name: " GridPane.columnIndex="0" GridPane.rowIndex="2">
+    </Label>
+       <!-- Add UserID Text Field -->
+       <TextField fx:id="fNameField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   
+   	<!-- Add LName Label -->
+       <Label text="Last Name: " GridPane.columnIndex="0" GridPane.rowIndex="3">
+    </Label>
+       <!-- Add LName Text Field -->
+       <TextField fx:id="lNameField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   	
+   	<!-- Add Address Label -->
+       <Label text="Address: " GridPane.columnIndex="0" GridPane.rowIndex="4">
+    </Label>
+       <!-- Add Address Text Field -->
+       <TextField fx:id="addressField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   	
+   
+       <!-- Add Email Label -->
+       <Label text="Email ID : " GridPane.columnIndex="0" GridPane.rowIndex="5">
+    </Label>
+       <!-- Add Email Text Field -->
+       <TextField fx:id="emailField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   
+   
+   
+       <!-- Add Password Label -->
+       <Label text="Password : " GridPane.columnIndex="0" GridPane.rowIndex="6">
+    </Label>
+       <!-- Add Password Field -->
+       <PasswordField fx:id="passwordField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+   
+   <!-- Add ContactNo Label -->
+       <Label text="Contact Number: " GridPane.columnIndex="0" GridPane.rowIndex="7">
+    </Label>
+       <!-- Add UserID Text Field -->
+       <TextField fx:id="contactNoField" prefHeight="40" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+   
+   
+       <!-- Add Submit Button -->
+       <Button fx:id="submitButton" defaultButton="true" onAction="#handleSubmitButtonAction" prefHeight="40" prefWidth="100" text="Register" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.rowSpan="1">
+           <GridPane.margin>
+               <Insets bottom="20" left="0" right="0" top="20" />
+           </GridPane.margin>
+       </Button>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="22.0" prefWidth="81.0" text="Back" GridPane.rowIndex="8" />
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints maxHeight="33.0" minHeight="27.0" prefHeight="29.0" />
+      <RowConstraints maxHeight="49.0" minHeight="24.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="61.0" minHeight="21.0" prefHeight="27.0" />
+      <RowConstraints maxHeight="72.0" minHeight="19.0" prefHeight="28.0" />
+      <RowConstraints maxHeight="71.0" minHeight="18.0" prefHeight="27.0" />
+      <RowConstraints maxHeight="80.0" minHeight="12.0" prefHeight="28.0" />
+      <RowConstraints maxHeight="92.0" minHeight="13.0" prefHeight="31.0" />
+      <RowConstraints maxHeight="143.0" minHeight="34.0" prefHeight="34.0" />
+   </rowConstraints>
+</GridPane>

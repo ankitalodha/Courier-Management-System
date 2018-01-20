@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdateCostController">
+  <children>
+     <Button fx:id="updateCostButton" layoutX="464.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="Update Cost" />
+     <Button layoutX="381.0" layoutY="338.0" mnemonicParsing="false" text="Back" />
+     <Label fx:id="showCostLabel" layoutX="184.0" layoutY="181.0" prefHeight="39.0" prefWidth="111.0" text="Cost: " />
+     <Label fx:id="showCost" layoutX="290.0" layoutY="181.0" prefHeight="39.0" prefWidth="111.0" text="Label" />
+      <Label contentDisplay="CENTER" layoutX="175.0" layoutY="24.0" text="Update the Standard Rate Chart">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showSourceLabel" layoutX="60.0" layoutY="81.0" text="Shipping from:" />
+      <Label fx:id="showDestinationLabel" layoutX="60.0" layoutY="126.0" prefHeight="17.0" prefWidth="64.0" text="Shipping to:" />
+      <Label fx:id="showSourceCity" layoutX="184.0" layoutY="81.0" text="Label" />
+      <Label fx:id="showDestCity" layoutX="184.0" layoutY="126.0" text="Label" />
+      <Label fx:id="showSourceStateLabel" layoutX="285.0" layoutY="81.0" text="From State:" />
+      <Label fx:id="showSourceState" layoutX="412.0" layoutY="81.0" text="Label" />
+      <Label fx:id="showDestStateLabel" layoutX="285.0" layoutY="126.0" text="To State:" />
+      <Label fx:id="showDestState" layoutX="412.0" layoutY="126.0" text="Label" />
+      <Label fx:id="newCostLabel" layoutX="184.0" layoutY="240.0" text="Enter New Cost" />
+      <TextField fx:id="newCost" layoutX="285.0" layoutY="236.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff54" height="105.0" layoutX="38.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="525.0" />
+  </children>
+</Pane>

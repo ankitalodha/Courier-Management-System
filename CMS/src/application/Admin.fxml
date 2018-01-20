@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Button layoutX="255.0" layoutY="122.0" mnemonicParsing="false" onAction="#viewReport" text="View Report" />
+      <Button layoutX="240.0" layoutY="173.0" mnemonicParsing="false" onAction="#createCustomer" text="Add Customer" />
+      <Button layoutX="263.0" layoutY="245.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button fx:id="viewAllOrder" layoutX="374.0" layoutY="122.0" mnemonicParsing="false" onAction="#viewAllOrder" text="View all Orders" />
+      <Button fx:id="addCustomer" layoutX="374.0" layoutY="173.0" mnemonicParsing="false" onAction="#addCustomer" text="Add Customer" />
+   </children>
+</AnchorPane>

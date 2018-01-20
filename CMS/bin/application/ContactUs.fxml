@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="153.0" layoutY="75.0" prefHeight="17.0" prefWidth="271.0" text="For more details on our product contact us: ">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="119.0" text="Ankita Lodha">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="146.0" prefHeight="17.0" prefWidth="139.0" text="alodha3@hawk.iit.edu">
+         <font>
+            <Font name="Consolas Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="389.0" layoutY="119.0" text="Abhijeet Kulkarni">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="146.0" prefHeight="17.0" prefWidth="155.0" text="akulkarni5@hawk.iit.edu">
+         <font>
+            <Font name="Consolas Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="176.0" layoutY="186.0">
+         <image>
+            <Image url="@contactus.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

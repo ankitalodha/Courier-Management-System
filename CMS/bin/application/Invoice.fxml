@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InvoiceController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#87b6e1" height="34.0" layoutX="9.0" layoutY="192.0" stroke="BLACK" strokeType="INSIDE" width="572.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e1ea" height="27.0" layoutX="12.0" layoutY="230.0" stroke="WHITE" strokeType="INSIDE" width="572.0" />
+      <Label layoutX="9.0" layoutY="7.0" prefHeight="53.0" prefWidth="251.0" text="INVOICE" textFill="#1249c4b2">
+         <font>
+            <Font name="Cambria" size="57.0" />
+         </font>
+      </Label>
+      <Label fx:id="invoiceDate" layoutX="396.0" layoutY="34.0" prefHeight="17.0" prefWidth="114.0" text="Label" />
+      <Label fx:id="sourceAddressLine" layoutX="21.0" layoutY="104.0" prefHeight="27.0" prefWidth="190.0" text="Label" />
+      <Label fx:id="destAddressLine" layoutX="396.0" layoutY="104.0" prefHeight="27.0" prefWidth="190.0" text="Label" />
+      <Label fx:id="orderID" layoutX="21.0" layoutY="235.0" text="Label" />
+      <Label fx:id="showPackageName" layoutX="232.0" layoutY="235.0" text="Label" />
+      <Label layoutX="376.0" layoutY="328.0" prefHeight="27.0" prefWidth="108.0" text="Total to be Paid    :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="517.0" layoutY="200.0" prefHeight="27.0" prefWidth="67.0" text="Charges" />
+      <Label layoutX="376.0" layoutY="355.0" prefHeight="27.0" prefWidth="108.0" text="Amount Paid        :" />
+      <Label layoutX="376.0" layoutY="382.0" prefHeight="27.0" prefWidth="108.0" text="Due                      :" />
+      <Label fx:id="totaltobepaid" layoutX="517.0" layoutY="333.0" text="Label" />
+      <Label fx:id="amountpaid" layoutX="517.0" layoutY="360.0" text="NIL" />
+      <Label fx:id="due" layoutX="517.0" layoutY="387.0" text="NIL" />
+      <Label layoutX="21.0" layoutY="205.0" text="ORDER ID" />
+      <Label layoutX="219.0" layoutY="205.0" text="PACKAGE NAME" />
+      <Label fx:id="SourceCity" layoutX="21.0" layoutY="131.0" prefHeight="27.0" prefWidth="76.0" text="Label" />
+      <Label fx:id="destCity" layoutX="396.0" layoutY="131.0" prefHeight="27.0" prefWidth="76.0" text="Label" />
+      <Label fx:id="sPIN" layoutX="21.0" layoutY="158.0" prefHeight="27.0" prefWidth="190.0" text="Label" />
+      <Label fx:id="dPIN" layoutX="396.0" layoutY="158.0" prefHeight="27.0" prefWidth="190.0" text="Label" />
+      <Label layoutX="21.0" layoutY="77.0" text="Invoice #" />
+      <Label fx:id="invoiceID" layoutX="94.0" layoutY="77.0" text="Label" />
+      <Button fx:id="saveInvoice" layoutX="463.0" layoutY="429.0" mnemonicParsing="false" onAction="#saveOrderInformation" text="Save this Invoice" />
+      <Button layoutX="396.0" layoutY="429.0" mnemonicParsing="false" text="Back" />
+      <Label fx:id="SourceState" layoutX="108.0" layoutY="131.0" prefHeight="27.0" prefWidth="76.0" text="Label" />
+      <Label fx:id="destState" layoutX="493.0" layoutY="131.0" prefHeight="27.0" prefWidth="76.0" text="Label" />
+      <Label fx:id="pkgcost" layoutX="531.0" layoutY="235.0" text="Label" />
+      <ImageView fitHeight="74.0" fitWidth="341.0" layoutX="15.0" layoutY="332.0">
+         <image>
+            <Image url="@barcode.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

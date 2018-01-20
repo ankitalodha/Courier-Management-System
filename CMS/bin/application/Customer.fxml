@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="643.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerController">
+   <children>
+
+      <Button fx:id="viewOrdersButton" layoutX="38.0" layoutY="1.0" mnemonicParsing="false" onAction="#viewOrders" prefHeight="131.0" prefWidth="158.0" style="-fx-background-color: white;">
+       <graphic>
+                  <ImageView blendMode="DARKEN" fitHeight="104.0" fitWidth="107.0">
+                     <image>
+                        <Image url="@vord1.jpg" />
+                     </image>
+                  </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="createOrderButton" layoutX="236.0" layoutY="14.0" mnemonicParsing="false" onAction="#createOrders" prefHeight="105.0" prefWidth="150.0" style="-fx-background-color: white;">
+         <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="130.0">
+                     <image>
+                        <Image url="@ordernow.png" />
+                     </image>
+                  </ImageView>
+         </graphic>
+         </Button>
+      <Button fx:id="cancelOrderButton" layoutX="443.0" layoutY="6.0" mnemonicParsing="false" onAction="#cancelOrders" prefHeight="71.0" prefWidth="81.0" style="-fx-background-color: white;">
+         <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="122.0">
+                     <image>
+                        <Image url="@cancel.png" />
+                     </image>
+                  </ImageView>
+         </graphic>
+         </Button>
+      <Button fx:id="enquiryButton" layoutX="139.0" layoutY="194.0" mnemonicParsing="false" onAction="#viewRateChart" prefHeight="64.0" prefWidth="81.0" style="-fx-background-color: white;">
+              <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="122.0">
+                     <image>
+                        <Image url="@costinq.png" />
+                     </image>
+                  </ImageView>
+         </graphic>
+         </Button>
+      <Button fx:id="generateInvButton" layoutX="348.0" layoutY="194.0" mnemonicParsing="false" onAction="#genInv" prefHeight="64.0" prefWidth="81.0" style="-fx-background-color: white;">
+         <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="122.0">
+                     <image>
+                        <Image url="@inv.png" />
+                     </image>
+                  </ImageView>
+         </graphic>
+         </Button>
+      <Button fx:id="logOutButton" layoutX="518.0" layoutY="370.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Logout" onAction = "#onLogout"/>
+      <Label layoutX="67.0" layoutY="134.0" text="View your Orders" />
+      <Label layoutX="249.0" layoutY="134.0" text="Place your Courier Order" />
+      <Label layoutX="463.0" layoutY="134.0" text="Cancel your order" />
+      <Label layoutX="136.0" layoutY="326.0" text="Check the Courier cost" />
+      <Label layoutX="383.0" layoutY="326.0" text="Generate Invoice" />
+   </children>
+</AnchorPane>

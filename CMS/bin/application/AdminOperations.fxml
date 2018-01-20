@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="393.0" prefWidth="493.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminOperationsController">
+   <children>
+      <AnchorPane layoutX="-116.0" layoutY="-165.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="viewOrdersButton" layoutX="39.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="123.0" prefWidth="129.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="122.0" fitWidth="122.0">
+               <image>
+                  <Image url="@updateordstatus.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="updateCostButton" layoutX="39.0" layoutY="203.0" mnemonicParsing="false" onAction="#updateCostButtonAction" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="118.0" fitWidth="119.0">
+               <image>
+                  <Image url="@cost.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="viewAllOrder" layoutX="298.0" layoutY="9.0" mnemonicParsing="false" onAction="#viewAllOrder" prefHeight="114.0" prefWidth="140.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="125.0" fitWidth="124.0">
+               <image>
+                  <Image url="@orders.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="addCustomer" layoutX="298.0" layoutY="203.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="126.0" prefWidth="146.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="133.0" fitWidth="141.0">
+               <image>
+                  <Image url="@adduser.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="46.0" layoutY="155.0" text="Change order status" />
+      <Label layoutX="36.0" layoutY="329.0" text="Update Cost on Rate Chart" />
+      <Label layoutX="306.0" layoutY="155.0" text="View all Orders on CMS" />
+      <Label layoutX="330.0" layoutY="336.0" text="Add Customer" />
+   </children>
+</AnchorPane>

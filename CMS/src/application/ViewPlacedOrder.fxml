@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewPlacedOrderController">
+  <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e8beb29" height="122.0" layoutX="17.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="563.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff66" height="73.0" layoutX="16.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="563.0" />
+     <Button fx:id="confirmOrderButton" layoutX="464.0" layoutY="396.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="Confirm Order" />
+     <Button layoutX="379.0" layoutY="396.0" mnemonicParsing="false" text="Back" />
+     <Label fx:id="showCostLabel" layoutX="23.0" layoutY="264.0" prefHeight="39.0" prefWidth="111.0" text="Cost: " />
+     <Label fx:id="showCost" layoutX="159.0" layoutY="264.0" prefHeight="39.0" prefWidth="111.0" text="Label" />
+      <Label fx:id="showUserIdLabel" layoutX="24.0" layoutY="83.0" text="Order Placed By:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="175.0" layoutY="24.0" text="You are just one step away from placing your order!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showPackageNameLabel" layoutX="22.0" layoutY="123.0" text="Package Name:" />
+      <Label fx:id="showSourceLabel" layoutX="23.0" layoutY="180.0" text="Shipping from:" />
+      <Label fx:id="showDestinationLabel" layoutX="22.0" layoutY="236.0" prefHeight="17.0" prefWidth="64.0" text="Shipping to:" />
+      <Label fx:id="showUserId" layoutX="137.0" layoutY="83.0" text="Label" />
+      <Label fx:id="showPackageName" layoutX="137.0" layoutY="123.0" text="Label" />
+      <Label fx:id="showSourceCity" layoutX="137.0" layoutY="180.0" text="Label" />
+      <Label fx:id="showDestCity" layoutX="104.0" layoutY="236.0" text="Label" />
+      <Label fx:id="showSourceStateLabel" layoutX="199.0" layoutY="180.0" text="From State:" />
+      <Label fx:id="showSourceState" layoutX="272.0" layoutY="180.0" text="Label" />
+      <Label fx:id="showSourcePinLabel" layoutX="366.0" layoutY="180.0" text="From Pin Code" />
+      <Label fx:id="showSourcePin" layoutX="457.0" layoutY="180.0" text="Label" />
+      <Label fx:id="showDestStateLabel" layoutX="206.0" layoutY="236.0" text="To State  :" />
+      <Label fx:id="showDestState" layoutX="265.0" layoutY="236.0" text="Label" />
+      <Label fx:id="showDestPinLabel" layoutX="367.0" layoutY="236.0" text="To Pin Code" />
+      <Label fx:id="showDestPin" layoutX="457.0" layoutY="236.0" text="Label" />
+      <Label fx:id="showPackageTypeLabel" layoutX="25.0" layoutY="303.0" text="Package Type:" />
+      <Label fx:id="showPackageType" layoutX="161.0" layoutY="303.0" text="Label" />
+      <Label fx:id="showDeliveryTypeLabel" layoutX="272.0" layoutY="303.0" text="Delivery Type:" />
+      <Label fx:id="showDeliveryType" layoutX="405.0" layoutY="303.0" text="Label" />
+      <Label fx:id="fromLabel" layoutX="25.0" layoutY="153.0" text="From:" />
+      <Label fx:id="fromSource" layoutX="107.0" layoutY="153.0" prefHeight="17.0" prefWidth="198.0" text="Label" />
+      <Label fx:id="toLabel" layoutX="24.0" layoutY="209.0" text="To:" />
+      <Label fx:id="toDestination" layoutX="107.0" layoutY="209.0" prefHeight="17.0" prefWidth="198.0" text="Label" />
+      <Label fx:id="FragileCostLabel" layoutX="24.0" layoutY="330.0" text="Fragile Package Cost" />
+      <Label fx:id="FragileCost" layoutX="161.0" layoutY="330.0" text="Label" />
+      <Label fx:id="ExpressCostLabel" layoutX="269.0" layoutY="330.0" text="Express Delivery Cost" />
+      <Label fx:id="ExpressCost" layoutX="405.0" layoutY="330.0" text="Label" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e8beb11" height="79.0" layoutX="16.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="563.0" />
+  </children>
+</Pane>
